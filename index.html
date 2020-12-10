@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Speakers</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="https://abrensberger.github.io/speakers/">
+		<meta name="description" content="Speakers">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<style>
+		body {background:#fbfbfb; font-family:"Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
+		h1, h2, h3, h4, h5 {color:#5f5f5f; margin-top:0.5rem; margin-bottom:0.5rem;}
+		p {color:#5f5f5f; line-height:1.75em;}
+		.speaker-image {height:200px; width:200px; overflow:hidden; margin:0 auto;}
+		.speaker-image > img {transition:all 0.3s ease;}
+		.speaker-image:hover > img:first-child {margin-top:-200px; display:block; transition:all 0.3s ease;}
+		.speaker-image-border-1 {height:208px; width:208px; margin:0 auto!important; display:inline-block!important; border-radius:5px; padding-left:10px; padding-bottom:10px; background:repeating-linear-gradient(-45deg, rgba(255, 255, 255, .75), rgba(255, 255, 255, .75) 5px, rgba(69, 171, 198, .75) 1px, rgba(69, 171, 198, .75) 10px);}
+		.speaker-image-border-2 {height:208px; width:208px; overflow:hidden; display:block; margin:0 auto; position:inherit; border-top:none; border-right:#28a7c3 10px solid; border-bottom:#116f8e 10px solid; border-left:none; border-radius:0!important;}
+		.speaker-image-border-3 {height:200px; width:200px; overflow:hidden; display:block; margin:0 auto; position:inherit; border:#116f8e 10px solid; border-radius:10rem!important;}
+	.img-grey {filter: url(data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%2…%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale)!important;
+	filter: grayscale(100%)!important; -webkit-filter: grayscale(100%)!important; -moz-filter: grayscale(100%)!important; -ms-filter: grayscale(100%)!important; -o-filter: grayscale(100%)!important; filter: gray!important;}
+	
+	/* Flip Card Effect */
+	.flip-card {width:200px; height:200px; margin:0 auto; background-color:transparent; perspective:1000px;}
+	.flip-card-inner {position:relative; width:100%; height:100%; text-align:center; transition:transform 0.8s; transform-style:preserve-3d;}
+	.flip-card:hover .flip-card-inner {transform:rotateY(180deg);}
+	.flip-card-front,.flip-card-back {position:absolute; width:100%; height:100%; backface-visibility:hidden;}
+	.flip-card-front {color:#fff!important; padding:0em; align-items:center; flex-wrap:wrap;}
+	.flip-card-back {padding:0em; transform:rotateY(180deg);}
+	</style>
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-md-12">
+				<hr>
+				<h2 class="fa-3x text-center">Variations</h2>
+				<hr>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h3 class="fa-2x"><strong>Squares (slide)</strong></h3>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Normal</h5>
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Rounded</h5>
+				<div class="speaker-image rounded">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid rounded">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid rounded">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Thumbnail</h5>
+				<div class="speaker-image rounded">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid img-thumbnail">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid img-thumbnail">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Greyscale</h5>
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid img-grey">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid img-grey">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row mt-4">
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Normal - Border 1</h5>
+				<div class="speaker-image-border-1">
+					<div class="speaker-image">
+						<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+						<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Rounded - Border 1</h5>
+				<div class="speaker-image-border-1 rounded">
+					<div class="speaker-image">
+						<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid rounded">
+						<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid rounded">
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Normal - Border 2</h5>
+				<div class="speaker-image-border-2">
+					<div class="speaker-image">
+						<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+						<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Rounded - Border 2</h5>
+				<div class="speaker-image-border-2 rounded">
+					<div class="speaker-image">
+						<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid rounded">
+						<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid rounded">
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<hr/>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h3 class="fa-2x"><strong>Squares (flip)</strong></h3>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Normal</h5>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+						</div>
+						<div class="flip-card-back">
+							<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+						</div>
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Rounded</h5>
+				<div class="flip-card rounded">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid rounded">
+						</div>
+						<div class="flip-card-back">
+							<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid rounded">
+						</div>
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Thumbnail</h5>
+				<div class="flip-card rounded">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid img-thumbnail">
+						</div>
+						<div class="flip-card-back">
+							<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid img-thumbnail">
+						</div>
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Greyscale</h5>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid img-grey">
+						</div>
+						<div class="flip-card-back">
+							<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid img-grey">
+						</div>
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row mt-4">
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Normal - Border 1</h5>
+				<div class="speaker-image-border-1">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+							</div>
+							<div class="flip-card-back">
+								<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Rounded - Border 1</h5>
+				<div class="speaker-image-border-1 rounded">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid rounded">
+							</div>
+							<div class="flip-card-back">
+								<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid rounded">
+							</div>
+						</div>
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Normal - Border 2</h5>
+				<div class="speaker-image-border-2">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+							</div>
+							<div class="flip-card-back">
+								<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Rounded - Border 2</h5>
+				<div class="speaker-image-border-2 rounded">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid rounded">
+							</div>
+							<div class="flip-card-back">
+								<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid rounded">
+							</div>
+						</div>
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<hr/>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h3 class="fa-2x"><strong>Circles (slide)</strong></h3>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Normal</h5>
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid rounded-circle">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid rounded-circle">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Circle Thumbnail</h5>
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid rounded-circle img-thumbnail">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid rounded-circle img-thumbnail">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Circle Greyscale</h5>
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid rounded-circle img-grey">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid rounded-circle img-grey">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Circle Border</h5>
+				<div class="speaker-image-border-3">
+					<div class="speaker-image" style="margin:-0.5rem;">
+						<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid rounded-circle">
+						<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid rounded-circle">
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<hr/>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h3 class="fa-2x"><strong>Circles (flip)</strong></h3>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Normal</h5>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid rounded-circle">
+						</div>
+						<div class="flip-card-back">
+							<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid rounded-circle">
+						</div>
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Circle Thumbnail</h5>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid rounded-circle img-thumbnail">
+						</div>
+						<div class="flip-card-back">
+							<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid rounded-circle img-thumbnail">
+						</div>
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Circle Greyscale</h5>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid rounded-circle img-grey">
+						</div>
+						<div class="flip-card-back">
+							<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid rounded-circle img-grey">
+						</div>
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<h5>Circle Border</h5>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<div class="speaker-image-border-3">
+								<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid rounded-circle">
+							</div>
+							<div class="flip-card-back">
+								<div class="speaker-image-border-3">
+									<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid rounded-circle">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-md-12">
+				<hr>
+				<h2 class="fa-3x text-center">Layout</h2>
+				<hr>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h3 class="fa-2x"><strong>One Speaker</strong></h3>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-md-12 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<hr/>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h3 class="fa-2x"><strong>Two Speakers</strong></h3>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-lg-3 col-md-6 col-sm-6 offset-lg-3 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<hr/>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h3 class="fa-2x"><strong>Three Speakers</strong></h3>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-lg-4 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 mx-sm-auto text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<hr/>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h3 class="fa-2x"><strong>Four Speakers</strong></h3>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<hr/>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h3 class="fa-2x"><strong>Five Speakers</strong></h3>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-lg-4 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 ml-md-auto text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 mr-md-auto mx-sm-auto text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<hr/>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h3 class="fa-2x"><strong>Six Speakers</strong></h3>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-lg-4 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<hr/>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h3 class="fa-2x"><strong>Seven Speakers</strong></h3>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 ml-lg-auto text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 mr-lg-auto text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<hr/>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h3 class="fa-2x"><strong>Eight Speakers</strong></h3>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+				<div class="speaker-image">
+					<img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_5dc81cc2db168556935f3112ea8e4787.jpg" class="img-fluid">
+					<img src="http://fpoimg.com/200x200?text=Speaker%20Logo&amp;bg_color=666" class="img-fluid">
+				</div>
+				<h4>FirstName LastName</h4>
+				<p>SpeakerTitle<br/><strong>SpeakerCompany</strong></p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<hr/>
+			</div>
+		</div>
+	</div>
+	<footer>
+	</footer>
+</body>
+</html>
